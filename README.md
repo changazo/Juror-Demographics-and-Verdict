@@ -1,6 +1,6 @@
 # Codebook para el dataset 'jurors_clean'
 
-Este codebook describe las variables contenidas en el dataset `jurors_clean`, que fue procesado a partir del dataset original `03689-0005-Data.csv`. Se renombraron las variables a un formato más legible (snake_case) y se recodificaron las variables categóricas a factores con etiquetas descriptivas en inglés.
+Este codebook describe las variables contenidas en el dataset `jurors_clean`, que fue procesado a partir del dataset original `03689-0005-Data.csv` correspondiente a encuestas a jurados entre 2000 y 2001 en Washington DC, Estados Unidos. Se renombraron las variables a un formato más legible (snake_case) y se recodificaron las variables categóricas a factores con etiquetas descriptivas en inglés.
 
 ---
 
