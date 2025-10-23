@@ -1,12 +1,12 @@
-# Codebook para el Dataset 'jurors_clean'
+# Codebook para el dataset 'jurors_clean'
 
-Este codebook describe las variables contenidas en el dataset `jurors_clean`, que ha sido procesado a partir del dataset original `03689-0005-Data.csv`. Se han renombrado las variables a un formato más legible (snake_case) y se han recodificado las variables categóricas a factores con etiquetas descriptivas en inglés.
+Este codebook describe las variables contenidas en el dataset `jurors_clean`, que fue procesado a partir del dataset original `03689-0005-Data.csv`. Se renombraron las variables a un formato más legible (snake_case) y se recodificaron las variables categóricas a factores con etiquetas descriptivas en inglés.
 
 ---
 
-## 1. Variables Demográficas
+## 1. Variables demográficas
 
-| Nombre de Variable     | Descripción                                   | Tipo de Variable | Niveles (Valores Recodificados)                                             |
+| Nombre de variable     | Descripción                                   | Tipo de variable | Niveles (valores recodificados)                                             |
 | :--------------------- | :-------------------------------------------- | :--------------- | :-------------------------------------------------------------------------- |
 | `gender`               | Género del miembro del jurado.                | Factor           | `Male`, `Female`                                                            |
 | `age_group`            | Rango de edad del miembro del jurado.         | Factor (Ordenado)| `18-25`, `26-35`, `36-45`, `46-55`, `56-65`, `Over 65`                        |
@@ -18,30 +18,30 @@ Este codebook describe las variables contenidas en el dataset `jurors_clean`, qu
 
 ---
 
-## 2. Variables de Votación Individual
+## 2. Variables de votación individual
 
-| Nombre de Variable        | Descripción                                                                          | Tipo de Variable | Niveles (Valores Recodificados)                 |
+| Nombre de variable        | Descripción                                                                          | Tipo de variable | Niveles (valores recodificados)                 |
 | :------------------------ | :----------------------------------------------------------------------------------- | :--------------- | :---------------------------------------------- |
 | `individual_first_vote`   | Voto individual inicial del miembro del jurado en la primera votación o sondeo.    | Factor           | `Guilty` (Culpable), `Not Guilty` (No Culpable), `Undecided` (Indeciso) |
 | `individual_final_vote`   | Voto individual final del miembro del jurado después de las deliberaciones.        | Factor           | `Guilty` (Culpable), `Not Guilty` (No Culpable), `Undecided` (Indeciso) |
 
 ---
 
-## 3. Variables de Votación Grupal (Conteo de Votos)
+## 3. Variables de votación grupal (Conteo de votos)
 
 Estas variables representan el conteo total de votos para cada categoría, según lo recordado por el miembro del jurado que responde la encuesta.
 
-### Primer Voto Grupal
+### Primer voto grupal
 
-| Nombre de Variable                  | Descripción                                                                     | Tipo de Variable | Rango           |
+| Nombre de variable                  | Descripción                                                                     | Tipo de variable | Rango           |
 | :---------------------------------- | :------------------------------------------------------------------------------ | :--------------- | :-------------- |
 | `group_first_vote_guilty`           | Número de votos para Culpable en la primera votación grupal.                  | Numérico         | 0-12            |
 | `group_first_vote_not_guilty`       | Número de votos para No Culpable en la primera votación grupal.               | Numérico         | 0-12            |
 | `group_first_vote_undecided`        | Número de votos para Indeciso en la primera votación grupal.                  | Numérico         | 0-12            |
 
-### Voto Final Grupal
+### Voto final grupal
 
-| Nombre de Variable                 | Descripción                                                                    | Tipo de Variable | Rango           |
+| Nombre de variable                 | Descripción                                                                    | Tipo de variable | Rango           |
 | :--------------------------------- | :----------------------------------------------------------------------------- | :--------------- | :-------------- |
 | `group_final_vote_guilty`          | Número de votos para Culpable en la votación grupal final.                     | Numérico         | 0-12            |
 | `group_final_vote_not_guilty`      | Número de votos para No Culpable en la votación grupal final.                  | Numérico         | 0-12            |
