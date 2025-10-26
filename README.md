@@ -58,12 +58,6 @@ All categorical variables were recoded to readable **English labels**. Common mi
 | `viewpoints_considered_1to7`    | Whether viewpoints were considered (1–7)                     | Ordered [1–7] |
 | `had_enough_time`               | Juror felt they had enough time to express views             | `Yes`, `No` |
 
-**Group tallies** (if present in your Part 5 export):
-- `group_first_vote_guilty` / `group_first_vote_not_guilty` / `group_first_vote_undecided` → integers `0–12`.
-- `group_final_vote_guilty` / `group_final_vote_not_guilty` / `group_final_vote_undecided` → integers `0–12`.
-
-> If your source lacked “final vote” items, only the “first vote” fields appear populated.
-
 --------------------------------------------------------------------------------
 ## 3) Defendant, Victim & Case Context (from Part 1 – Case Data)
 
