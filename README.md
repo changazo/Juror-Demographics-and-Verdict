@@ -21,22 +21,21 @@ All categorical variables were recoded to readable **English labels**. Common mi
 | `juror_id`    | Juror/person identifier (if present from Part 5).        | String/Int    |
 | `juror_number`| Juror’s seat number within the case (if present).        | Int           |
 
-> Note: `juror_id` / `juror_number` depend on availability in Part 5 export.
-
 --------------------------------------------------------------------------------
 ## 1) Juror Demographics (from Part 5)
 
 | Variable                | What it captures (scope)                                                                                  | Type / Levels (ordered where applicable) |
 |-------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| `gender`                | Juror’s self-reported sex.                                                                                 | `Male`, `Female` |
-| `age_group`             | Age band at the time of service.                                                                          | `<25`, `25–34`, `35–44`, `45–54`, `55–64`, `65+` |
-| `race_ethnicity`        | Self-identified race/ethnicity. Categories distinguish Hispanic vs non-Hispanic where applicable.         | `White, non-Hispanic`, `White, Hispanic`, `Black, non-Hispanic`, `Black, Hispanic`, `Asian`, `Other` |
-| `religion`              | Religious identification (not intensity).                                                                  | `Protestant`, `Catholic`, `Jewish`, `None`, `Other` |
-| `education_level`       | Highest educational attainment.                                                                            | `Less than HS`, `HS graduate`, `Some college`, `College graduate`, `Postgraduate` |
-| `employment_status`     | Current labor market status (broad).                                                                       | `Full-time`, `Part-time`, `Unemployed`, `Retired`, `Homemaker`, `Student` |
-| `income_bracket_usd_2000` | Household income bracket (USD, circa 2000–2001).                                                         | `<$15k`, `$15–25k`, `$25–35k`, `$35–50k`, `$50–75k`, `$75k+` |
-| `prior_jury_experience` | Whether the juror has served previously on any jury.                                                       | `Yes`, `No` |
-| `was_foreperson`        | Whether the juror served as **foreperson** (presiding juror) **in this case**.                            | `Yes`, `No` |
+| `gender`            | Juror’s self-identified gender.                                             | `Male`, `Female` |
+| `age_group`         | Age band at the time of service.                                            | `18-25`, `26-35`, `36-45`, `46-55`, `56-65`, `Over 65` |
+| `education_level`   | Highest educational attainment.                                             | `Less than high school`, `High school graduate`, `Some college`, `College graduate`, `Post-graduate work` |
+| `race_ethnicity`    | Self-identified race/ethnicity.                                             | `Black/African American`, `White/Hispanic`, `White/Caucasian`, `Nonwhite/Hispanic`, `Asian/Pacific Islander`, `Native American`, `Other` |
+| `religion`          | Religious identification (not intensity).                                   | `Protestant`, `Catholic`, `Jewish`, `None`, `Other` |
+| `religion_level`    | Intensity of religiosity (not affiliation).                                 | `Very religious`, `Religious`, `Neither`, `Somewhat non-religious`, `Very non-religious` |
+| `income_bracket`    | Annual household income bracket (USD).                                      | `Under $10,000`, `$10,000 - $19,999`, `$20,000 - $29,999`, `$30,000 - $39,999`, `$40,000 - $49,999`, `$50,000 - $75,000`, `Over $75,000` |
+| `job_status`        | Current employment situation.                                               | `Employed full time`, `Employed part time`, `Self-employed`, `Homemaker`, `Retired`, `Student`, `Unemployed, and a student`, `Unemployed, seeking employment`, `Unemployed, not seeking employment` |
+| `prior_jury_experience` | Whether the juror has previously served on any jury.                    | `Yes`, `No` |
+| `was_foreperson`    | Whether the juror served as **foreperson** (presiding juror) in this case.  | `Yes`, `No` |
 
 --------------------------------------------------------------------------------
 ## 2) Juror Voting & Deliberation (from Part 5)
